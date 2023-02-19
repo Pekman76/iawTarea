@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reserva de visita</title>
+    </head>
+    <body>
+		<h1>Para reservar una visita rellene el siguiente formulario.</h1>
+   
+      
+		<form action="insertdatabase.php" method="post">
+			
+			<strong>Nombre</strong>
+				<input type="text" name="nombre"><br /><br />
+				
+			<strong>E-mail</strong>
+				<input type="email" name="correo"><br /><br />
+            
+            <strong>Tel&eacutefono</strong>
+            <input type="tel" id="phone" name="phone" placeholder="123456789" pattern="[0-9]{9}" required><br /><br />
+
+			<strong>¿Qu&eacute d&iacutea quiere venir?</strong><br /><br />
+				<input type="date" name="date">
+  				<br /><br />
+
+            <strong>¿A qu&eacute hora quiere venir?</strong><br /><br />
+				<input type="time" name="time">
+  				<br /><br />
+				
+			<strong>Comentarios:</strong><br />
+            	<textarea type="text" name="mensaje" rows="10" cols="30"></textarea><br /><br />
+				
+		    <input type="submit" value="Enviar"><input type="reset" value="Borrar datos"><br />
+				
+		  	</form>
+			  <br />
+			  <a href="principal.php">Inicio</a>
+    </body>
+</html>
